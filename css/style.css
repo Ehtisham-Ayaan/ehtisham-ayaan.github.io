@@ -1,34 +1,5 @@
 @charset "UTF-8";
 
-/*============================================================
-[Master Stylesheet]
-Theme Name:     Porichiti
-Version:        1.0
-Author:         Codebasket
-URL:            https://themeforest.net/user/codebasket
-=========================================================*/
-
-
-/*=======================================================
-TABLE OF CONTENTS:
-
-01  global Style
-
-======section stylsheet======
-
-02  Header section
-03  Banner section
-04  About section
-05  Skill section
-06  Service section
-07  Counter section
-08  Portfolio section 
-09  Testimonial section
-10  Contact section
-11  Blog section
-12  Newsletter section
-13  Footer section*/
-
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&amp;display=swap");
@@ -9699,4 +9670,70 @@ nav.mobile-nav.navbar.p-0.homepage-4-mobile-nav {
 
 .demo-11 nav.navigation.navigation-11.navbar-fixed {
     background: #000;
+}
+
+/* Custom override for banner heading size */
+.banner .banner-heading {
+    font-size: 40px !important;
+}
+
+/* Custom override for main text readability */
+body, .section-heading, .about-section, .experience-section, .education-section, .skills-section, .work-experience, .education, .technical-skills, .about-txt, .project-content, .service-content, .contact-section {
+    color: #f5f5f5 !important;
+}
+
+/* Also ensure paragraphs and list items are readable */
+p, li, span, div, h2, h3, h4, h5, h6 {
+    color: #f5f5f5 !important;
+}
+
+/* Professional Contact Form Custom Styles */
+.professional-contact-form .form-label {
+    color: #f5f5f5;
+    font-weight: 500;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+.professional-contact-form .input-group {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.03);
+    border-radius: 6px;
+    border: 1px solid #333;
+    transition: border-color 0.2s;
+}
+.professional-contact-form .input-group:focus-within {
+    border-color: #C9F31D;
+}
+.professional-contact-form .input-group-text {
+    background: transparent;
+    border: none;
+    color: #C9F31D;
+    font-size: 1.2rem;
+    padding-left: 14px;
+    padding-right: 6px;
+}
+.professional-contact-form .form-control {
+    background: transparent;
+    border: none;
+    color: #f5f5f5;
+    font-size: 1rem;
+    padding: 12px 10px;
+    box-shadow: none;
+}
+.professional-contact-form textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+}
+.professional-contact-form .def-btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.professional-contact-form .def-btn .txt {
+    letter-spacing: 0.5px;
+}
+.professional-contact-form .form-group {
+    margin-bottom: 1.5rem;
 }
