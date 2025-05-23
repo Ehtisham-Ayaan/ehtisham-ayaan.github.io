@@ -173,7 +173,7 @@ a {
 .def-btn.def-btn-8:hover {
     background: transparent;
     border-color: var(--main-color-7);
-    color: #323232;
+    color: #323232 !important;
 }
 
 .def-btn.def-btn-10 {
@@ -193,7 +193,7 @@ a {
 .def-btn.def-btn-10:hover {
     background: transparent;
     border-color: var(--main-color-7);
-    color: #323232;
+    color: #323232 !important;
 }
 
 .def-btn.def-btn-11 {
@@ -6068,8 +6068,9 @@ footer.footer-2 .app-download a:hover {
     padding-top: 160px;
 }
 
-.def-btn.def-btn-2.btn-hover:hover {
+.def-btn.def-btn-2.btn-hover:hover span.txt {
     background: var(--main-color-2);
+    color: black
 }
 
 .def-btn.def-btn-2.btn-hover span.dot {
@@ -9679,12 +9680,12 @@ nav.mobile-nav.navbar.p-0.homepage-4-mobile-nav {
 
 /* Custom override for main text readability */
 body, .section-heading, .about-section, .experience-section, .education-section, .skills-section, .work-experience, .education, .technical-skills, .about-txt, .project-content, .service-content, .contact-section {
-    color: #f5f5f5 !important;
+    color: #f5f5f5;
 }
 
 /* Also ensure paragraphs and list items are readable */
-p, li, span, div, h2, h3, h4, h5, h6 {
-    color: #f5f5f5 !important;
+p, li, div, h2, h3, h4, h5, h6 {
+    color: #f5f5f5;
 }
 
 /* Professional Contact Form Custom Styles */
