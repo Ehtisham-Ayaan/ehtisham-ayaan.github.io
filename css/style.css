@@ -1030,11 +1030,11 @@ img {
     margin-right: -170px;
 }
 
-.banner.banner-8 {
+/* .banner.banner-8 {
     background: url(../img/hero_bg_8.png) center center no-repeat;
     background-size: cover;
     padding-top: 80px;
-}
+} */
 
 .banner.banner-8 .banner-txt {
     padding: 150px 0;
@@ -1141,10 +1141,10 @@ img {
 }
 
 
-.banner.banner-9 {
+/* .banner.banner-9 {
     background: url(../img/hero_bg_9.png) center center no-repeat;
     background-size: cover;
-}
+} */
 
 .banner .banner-heading {
     position: relative;
