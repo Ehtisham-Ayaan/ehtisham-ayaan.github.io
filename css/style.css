@@ -4204,6 +4204,73 @@ figure.tv-thumb-card-tm img {
   font-size: 1.3em;
 }
 
+/* Magnific Popup Slide Animation */
+.mfp-slide-horizontal.mfp-bg {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.mfp-slide-horizontal.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-slide-horizontal .mfp-content {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+.mfp-slide-horizontal.mfp-ready .mfp-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+.mfp-slide-horizontal.mfp-removing .mfp-content {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.mfp-slide-horizontal .mfp-content.mfp-content-animate {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+/* LinkedIn Blog Button Animation */
+.linkedin-btn {
+  background: #1a1f22;
+  color: #C9F31D;
+  border: 1.5px solid #C9F31D;
+  border-radius: 50px;
+  padding: 0.6em 1.6em;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  font-weight: 500;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 12px rgba(25, 255, 0, 0.08);
+  transition: 
+    background 0.3s cubic-bezier(.4,2,.6,1),
+    color 0.3s cubic-bezier(.4,2,.6,1),
+    border 0.3s cubic-bezier(.4,2,.6,1),
+    transform 0.25s cubic-bezier(.4,2,.6,1),
+    box-shadow 0.25s cubic-bezier(.4,2,.6,1);
+}
+
+.linkedin-btn i {
+  transition: color 0.3s cubic-bezier(.4,2,.6,1), transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+.linkedin-btn:hover,
+.linkedin-btn:focus {
+  background: #C9F31D;
+  color: #1a1f22;
+  border-color: #1a1f22;
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 6px 24px rgba(201, 243, 29, 0.18);
+}
+
+.linkedin-btn:hover i,
+.linkedin-btn:focus i {
+  color: #1a1f22;
+  transform: scale(1.15) rotate(-8deg);
+}
 
 body, p, .text-dark, .navbar, .nav-link {
   color: #f5f5f5 !important;

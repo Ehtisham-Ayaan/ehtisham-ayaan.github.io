@@ -1,3 +1,25 @@
+$(document).ready(function() {
+  $('.project-gallery').magnificPopup({
+    type: 'image',
+    gallery: {
+      enabled: true
+    },
+    mainClass: 'mfp-slide-horizontal',
+    removalDelay: 300,
+    callbacks: {
+      change: function() {
+        var self = this;
+        var $content = this.content;
+        // Remove and re-add the animation class to trigger the transition
+        $content.removeClass('mfp-content-animate');
+        setTimeout(function() {
+          $content.addClass('mfp-content-animate');
+        }, 10);
+      }
+    }
+  });
+});
+
 $('.testimonial-9-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
