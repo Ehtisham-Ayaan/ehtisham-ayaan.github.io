@@ -1030,11 +1030,11 @@ img {
     margin-right: -170px;
 }
 
-/* .banner.banner-8 {
-    background: url(../img/hero_bg_8.png) center center no-repeat;
+.banner.banner-8 {
+    background: url(../img/hero-3.jpg) center center no-repeat;
     background-size: cover;
     padding-top: 80px;
-} */
+}
 
 .banner.banner-8 .banner-txt {
     padding: 150px 0;
